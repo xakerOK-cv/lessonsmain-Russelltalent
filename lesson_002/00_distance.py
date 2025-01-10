@@ -2,7 +2,8 @@
 # -*- coding: utf-8 -*-
 
 # Есть словарь координат городов
-# yjdsq
+# yjdsqfsdfsdfsdfsdfsdfsdfsedfsdfsdfsdfsdfsdfffffffffffffffffffff
+
 
 sites = {
     'Moscow': (550, 370),
