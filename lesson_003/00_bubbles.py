@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-
+# ahahhahaaaa
 import simple_draw as sd
 
 sd.resolution = (1200, 600)
