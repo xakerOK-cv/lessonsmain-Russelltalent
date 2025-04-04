@@ -4,7 +4,7 @@ import random
 import simple_draw
 import simple_draw as sd
 
-sd.resolution = (1200, 600)
+sd.resolution = (1200, 800)
 
 
 # Нарисовать пузырек - три вложенных окружностей с шагом 5 пикселей
