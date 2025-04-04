@@ -1,14 +1,29 @@
-# -*- coding: utf-8 -*-
 
-# (if/elif/else)
+import simple_draw as sd
 
-# По номеру месяца вывести кол-во дней в нем (без указания названия месяца, в феврале 28 дней)
-# Результат проверки вывести на консоль
-# Если номер месяца некорректен - сообщить об этом
+# Налаштування розміру екрану
+sd.resolution = (800, 600)
 
-# Номер месяца получать от пользователя следующим образом
-user_input = input("Введите, пожалуйста, номер месяца: ")
-month = int(user_input)
-print('Вы ввели', month)
+# Запуск малювання
+sd.start_drawing()
 
-# TODO здесь ваш код
+# Малюємо лінію
+start_point = sd.get_point(100, 100)
+end_point = sd.get_point(300, 100)
+sd.line(start_point, end_point, color=sd.COLOR_RED, width=3)
+
+# Малюємо коло
+center_point = sd.get_point(400, 300)
+sd.circle(center_position=center_point, radius=50, color=sd.COLOR_YELLOW, width=2)
+
+# Малюємо прямокутник
+left_bottom = sd.get_point(500, 400)
+right_top = sd.get_point(700, 500)
+sd.rectangle(left_bottom, right_top, color=sd.COLOR_GREEN, width=4)
+
+# Завершуємо малювання та показуємо результат
+sd.finish_drawing()
+
+# Чекаємо, поки користувач закриє вікно
+sd.sleep(5)  # Показуємо результат 5 секунд
+sd.quit()
